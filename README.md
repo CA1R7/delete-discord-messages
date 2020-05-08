@@ -1,3 +1,6 @@
-# dellet-all-messages
-Dellets all messages on discord with console browser.
-# copy code in file & past in the console.
+* Delete all messages on DM `discord`,
+Just copy it and past at console browser.
+
+- note = don't use it after putted a id of message
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
