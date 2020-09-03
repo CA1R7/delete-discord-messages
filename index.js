@@ -1,19 +1,16 @@
-var before = 'LAST_MESSAGE_ID';
+var before = 'LAST_MESSAGE_ID'; // enter Last id of messages.
 clearMessages = function(){
     const authToken = document.body.appendChild(document.createElement`iframe`).contentWindow.localStorage.token.replace(/"/g, "");
     const channel = window.location.href.split('/').pop();
-    const baseURL = `https://discordapp.com/api/channels/${channel}/messages`;
+    const baseURL = `https://discord.com/api/channels/${channel}/messages`;
     const headers = {"Authorization": authToken };
-
     let clock = 0;
     let interval = 500;
-
     function delay(duration) {
         return new Promise((resolve, reject) => {
             setTimeout(() => resolve(), duration);
         });
     }
-
     fetch(baseURL + '?before=' + before + '&limit=100', {headers})
         .then(resp => resp.json())
         .then(messages => {
