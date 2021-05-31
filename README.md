@@ -9,3 +9,4 @@ Note: Don't forget to put last ID messages on :
 ```javascript
 var before = "LAST_MESSAGE_ID"; // enter the last ID of message
 ```
+Last ID of message important ⚠️
