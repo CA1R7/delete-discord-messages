@@ -1,12 +1,12 @@
-# Discord message
-Delete all your private messages
+# Discord messages
+Delete all your private messages easily.
 
 # Usage
-1. Open inspect from `F12`.
-2. Then go to console and past code on file `index.js`.
+1. Open 'Developer Tools' > `Console`.
+2. Past the code inside `/index.js`
 
-Note: Don't forget to put last ID messages on :
+----------
 ```javascript
 var before = "LAST_MESSAGE_ID"; // enter the last ID of message
 ```
-Last ID of message important ⚠️
+The last ID of message is important ⚠️
